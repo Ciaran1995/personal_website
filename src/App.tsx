@@ -1,7 +1,7 @@
 import { useState, navigate } from 'react'
 import { Link, NavLink, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
-import viteLogo from 'public/vite.svg'
+import viteLogo from '/root/git_repos/react-project/public/vite.svg'
 import './App.css'
 import CertificatesPage from "./pages/CertificatesPage"
 import Header from "./components/Header"
@@ -16,12 +16,9 @@ const HomePage = ({count, setCount}) => {
   return (
     <>
       <div className="homepage">
-
-        <div className="header">
-          <Header></Header>
-        </div>
+        <Header></Header>
         
-        <div className="homepageBody">
+        <div className="homepage-body">
         <div>
             <a href="https://vite.dev" target="_blank">
               <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -59,7 +56,7 @@ function App() {
 
    return (
     <Router>
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 w-screen h-screen overflow-y-auto flex flex-col">
+      <div className="global-page">
         <Routes>
           <Route path="/" element={<HomePage count={count} setCount = {setCount}/>} />
           <Route path="/certificates" element={<CertificatesPage certificate={certificate}/>} />
