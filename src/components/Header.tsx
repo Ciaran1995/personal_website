@@ -5,14 +5,37 @@ import '../App.css'
 const Header = () => {
     return (
     <div className= "header">
-        <div className="headerNav">
+        <div className="header-title">
+            <NavLink to="/" end className="header-element" >
+                    CM
+            </NavLink>
+            <NavLink to="/" end className="header-element" >
+                    Ciaran McDonnell
+            </NavLink>
+        </div>
+        <div className="header-nav-bar">
             <div>
-                <NavLink to="/" end className="text-lg font-medium text-slate-300 hover:text-sky-400 transition-colors" >
+                <NavLink to="/" end className="header-element" >
                     Home
                 </NavLink>
             </div>
             <div>
-                <NavLink to="/certificates" end className="text-lg font-medium text-slate-300 hover:text-sky-400 transition-colors" >
+                <NavLink to="/about" end className="header-element" >
+                    About
+                </NavLink>
+            </div>
+            <div>
+                <NavLink to="/cv" end className="header-element" >
+                    CV
+                </NavLink>
+            </div>
+            <div>
+                <NavLink to="/projects" end className="header-element" >
+                    Projects
+                </NavLink>
+            </div>
+            <div>
+                <NavLink to="/certificates" end className="header-element" >
                     Certificates
                 </NavLink>
             </div>
