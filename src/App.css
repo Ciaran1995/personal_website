@@ -78,6 +78,20 @@
   color: white;
 }
 
+.what-i-do {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.interests-card {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* Older stuff */
 
 .logo {
