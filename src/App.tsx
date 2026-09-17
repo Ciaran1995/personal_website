@@ -1,10 +1,9 @@
 import { useState, navigate } from 'react'
 import { Link, NavLink, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/root/git_repos/react-project/public/vite.svg'
 import './App.css'
 import CertificatesPage from "./pages/CertificatesPage"
 import Header from "./components/Header"
+import interests from "../interests"
 
 const certificate = {
     image: "CertificateOfCompletion_JavaScript_Essential_Training.png",
@@ -19,30 +18,40 @@ const HomePage = ({count, setCount}) => {
         <Header></Header>
         
         <div className="homepage-body">
-        <div>
-            <a href="https://vite.dev" target="_blank">
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a href="https://react.dev" target="_blank">
-              <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
-        </div>
-          <h1>Vite + React</h1>
-        <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
-              count is {count}
-            </button>
-            <p>
-              Edit <code>src/App.jsx</code> and save to test HMR
-            </p>
-        </div>
-          <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-          </p>
-        </div>
 
-        <div className="footer">
-            <a>email</a>
+          <div>
+            <div className="bio-introduction">
+              <h1>Hi! I'm Ciarán</h1>
+              <h2>I'm a senior data scientist with a Ph.D. in theoretical physics from the University of Nottingham.</h2>
+
+            </div>
+          <div className="homepage-quick-links">
+              <NavLink to="/cv-ciaran" end className="cv-link" >
+                    View my CV
+              </NavLink>
+              <NavLink to="/certificates" end className="certificate-link" >
+                    View my certificates
+              </NavLink>
+          </div>
+          </div>
+          <div>
+            <h2>What I do</h2>
+          </div>
+          <div className="what-i-do">
+            {interests.map(i => (
+              <div id={i.title} className="interests-card">
+                <p>{i.icon}</p>
+                <p>{i.title}</p>
+                <p>{i.info}</p>
+
+              </div>
+            ))}
+              <div>
+
+              </div>
+              
+          </div>
+    
         </div>
 
       </div>
