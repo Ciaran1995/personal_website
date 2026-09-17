@@ -53,6 +53,12 @@
   color: black;
 }
 
+.hompage-bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .bio-introduction {
   background-color: rgb(164, 164, 234);
 }
