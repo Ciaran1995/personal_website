@@ -1,5 +1,6 @@
 #root {
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
   /* padding: 2rem; */
   display: flex;
@@ -10,16 +11,18 @@
 
 .global-page {
   width: 66%;
+  height: 100%;
 }
 
 /* .homepage {
   display: flex;
-  direction: row;
+  direction: col;
 } */
 
 .homepage-body {
+  height: 100vh;
+  border: solid 2px red;
   flex-grow: 2;
-  background: red;
 }
 
 .header {
@@ -49,6 +52,33 @@
 .header-nav-bar .header-element {
   color: black;
 }
+
+.bio-introduction {
+  background-color: rgb(164, 164, 234);
+}
+
+.homepage-quick-links {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  gap: 1rem;
+}
+
+.cv-link {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+}
+
+.certificate-link {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+}
+
+/* Older stuff */
 
 .logo {
   height: 6em;
