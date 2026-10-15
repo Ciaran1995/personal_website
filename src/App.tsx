@@ -19,25 +19,28 @@ const HomePage = () => {
         
         <div className="homepage-body">
           <div className="homepage-bio">
-            <div>
+            
             <div className="homepage-bio-content">
-            <div className="bio-introduction">
-              <h1>Hi! I'm Ciarán</h1>
-              <h2>I'm a senior data scientist with a Ph.D. in theoretical physics from the University of Nottingham.</h2>
+              <div className="bio-introduction">
+                <h1>Hi! I'm Ciarán</h1>
+                <h2>I'm a senior data scientist with a Ph.D. in theoretical physics from the University of Nottingham.</h2>
 
-            </div>
-            <div className="homepage-quick-links">
-                <NavLink to="/cv-ciaran" end className="cv-link" >
-                      View my CV
-                </NavLink>
-                <NavLink to="/certificates" end className="certificate-link" >
-                      View my certificates
-                </NavLink>
+              </div>
+              <div className="homepage-quick-links">
+                  <NavLink to="/cv-ciaran" end className="cv-link" >
+                        View my CV
+                  </NavLink>
+                  <NavLink to="/certificates" end className="certificate-link" >
+                        View my certificates
+                  </NavLink>
 
+              </div>
+              <div className="social-links">
+                  
+              </div>
             </div>
-            </div>
-            </div>
-            <div className="homepage-bio-spacer"><p>Space</p></div>
+            
+            
           </div>
           <div>
           <div className="homepage-interests">
