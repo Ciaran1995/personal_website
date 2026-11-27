@@ -2,6 +2,8 @@ import { useState, navigate } from 'react'
 import { Link, NavLink, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import CertificatesPage from "./pages/CertificatesPage"
+import CVPage from './pages/CVPage';
+import AboutMePage from './pages/AboutMePage';
 import Header from "./components/Header"
 import interests from "../interests"
 
@@ -27,7 +29,7 @@ const HomePage = () => {
 
               </div>
               <div className="homepage-quick-links">
-                  <NavLink to="/cv-ciaran" end className="cv-link" >
+                  <NavLink to="/cv" end className="cv-link" >
                         View my CV
                   </NavLink>
                   <NavLink to="/certificates" end className="certificate-link" >
@@ -35,9 +37,7 @@ const HomePage = () => {
                   </NavLink>
 
               </div>
-              <div className="social-links">
-                  
-              </div>
+  
             </div>
             
             
@@ -76,8 +76,10 @@ function App() {
     <Router>
       <div className="global-page">
         <Routes>
-          <Route path="/" element={<HomePage count={count} setCount = {setCount}/>} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/certificates" element={<CertificatesPage certificate={certificate}/>} />
+          <Route path="/cv" element={<CVPage />} />
+          <Route path="/about-me" element={<AboutMePage />} />
         </Routes>
       </div>
     </Router>
