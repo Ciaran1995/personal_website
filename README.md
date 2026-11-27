@@ -1,16 +1,15 @@
-# React + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Development of my personal website. Mostly aimed at providing another source of professional information about me but with some extra features and more informal/personal touches.
 
-Currently, two official plugins are available:
+## Site Location
+When completed the site will be found at [https://ciaranmcdonnell.com/](ciaranmcdonnell.com) which has a placeholder page for now.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Development Details
+### Frontend 
+The frontend is a single-page application built with [React](https://react.dev/) and written in TypeScript. Client-side routing between pages (Home, CV, Certificates, About Me) is handled by [React Router](https://reactrouter.com/).
 
-## React Compiler
+The project uses [Vite](https://vite.dev/) as its build tool.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project. 
+### Backend
+The plan is to also have a FastAPI backend which will handle retrieval of any data or information from public APIs as well as any LLM requests.
